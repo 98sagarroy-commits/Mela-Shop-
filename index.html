@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mela Shop | মেলা শপ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+
+    <div class="main-wrapper py-5 px-3">
+        <div class="container">
+            <div class="glass-card mx-auto">
+                <div class="text-center mb-4">
+                    <div class="logo-box">
+                        <img src="./Origins Leaf Logo Profile Picture.png" alt="Logo">
+                    </div>
+                    <h1 class="brand-name">MELA <span class="neon-text">SHOP</span></h1>
+                    <p class="tagline bangla-font">সেরা পণ্যের রঙিন মেলা</p>
+                </div>
+
+                <div class="info-section mb-4 text-center">
+                    <p class="description">
+                        গ্যাজেটস, ফ্যাশন এবং কোয়ালিটি লাইফস্টাইল - সব পাবেন এখানেই! আমাদের <strong>Facebook Page</strong> থেকে আপনার পছন্দের পণ্যটি সিলেক্ট করুন।
+                    </p>
+                </div>
+
+                <div class="d-grid gap-3">
+                    <button onclick="sendOrderMsg()" class="link-btn btn-wa">
+                        <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp; Contact us on WhatsApp
+                    </button>
+                    
+                    <a href="https://www.facebook.com/share/1GWTkXuE4m/" target="_blank" class="link-btn btn-fb">
+                        <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp; Facebook Page
+                    </a>
+
+                    <div class="login-container mt-3">
+                        <button onclick="loginWithGoogle()" class="btn-gmail">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="18">&nbsp;&nbsp;&nbsp;&nbsp; Gmail Login
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-info mt-5 text-center">
+                    <p class="m-0 small text-white-50">Mobile: 01******986</p>
+                    <div class="divider mx-auto my-3"></div>
+                    <p class="m-0 bangla-font text-white fw-bold">মেলা শপ - আপনার বিশ্বস্ত পার্টনার</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendOrderMsg() {
+            // Ekhane message format change kora hoyeche
+            const customMsg = "Hey Mela Shop! 👋 %0A%0Aআমি আপনার ওয়েবসাইট থেকে আসছি। আমি কিছু পণ্য সম্পর্কে জানতে চাই। দয়া করে আমাকে সাহায্য করুন।.";
+            const url = `https://wa.me/8801981500986?text=${customMsg}`;
+            window.open(url, '_blank');
+        }
+
+        function loginWithGoogle() {
+            alert("Google login setup korar jonno Firebase connectivity proyojon!");
+        }
+    </script>
+</body>
+</html>
